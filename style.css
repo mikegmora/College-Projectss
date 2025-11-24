@@ -88,26 +88,6 @@ html {
     background-attachment: fixed;
 }
 
-/* Mobile Swap */
-@media screen and (max-width: 768px) {
-    .bio-section {
-        /* Load the vertical image instead */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac\ picture.webp');
-
-        /* Reset attachment to scroll for better mobile performance */
-        background-attachment: scroll;
-    }
-}
-
-.music-section {
-    padding: 100px;
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac 1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 
 .acting-section {
     padding: 100px;
