@@ -1,0 +1,248 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    overflow-x: hidden;
+}
+
+.video-hero {
+    position: relative;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#pac-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    text-shadow: 4px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.bio-section {
+    text-align: center;
+    position: relative;
+    padding: 100px;
+    min-height: 100vh;
+    z-index: 2;
+    color: rgb(255, 204, 0);
+    background-image: url('2pac\ picture.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.bio-section h2 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.bio-section h3 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.bio-section p,
+.bio-section ul,
+.bio-section li {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* White box with slight transparency */
+    color: black;
+    /* Black text */
+    padding: 20px;
+    border-radius: 5px;
+    /* Rounded corners */
+    max-width: 800px;
+    /* Prevents text from stretching too wide */
+    margin: 0 auto 20px auto;
+    /* Centers the text block */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Adds a shadow behind the text box */
+}
+
+/* Default (Desktop) */
+.bio-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac\ picture.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Mobile Swap */
+@media screen and (max-width: 100px) {
+    .bio-section {
+        /* Load the vertical image instead */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac\ picture.webp');
+
+        /* Reset attachment to scroll for better mobile performance */
+        background-attachment: scroll;
+    }
+}
+
+.music-section {
+    padding: 100px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac 1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.acting-section {
+    padding: 100px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.quotes-section {
+    padding: 100px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac\ 4.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.legacy-section {
+    padding: 100px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac\ 3.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#gif-button {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#gif-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+#dance-gif {
+    display: none;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#talking-video {
+    display: block;
+    margin: 40px auto;
+    width: 60%;
+    /* Reduce video size */
+    max-width: 600px;
+    /* Prevent it from getting too large */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section p,
+section ul,
+section li,
+blockquote {
+    background-color: rgba(134, 122, 122, 0.65);
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Quote Above Talking Video */
+.quote-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff3700;
+    margin-top: 80px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Talking Video Styling */
+#talking-video {
+    display: block;
+    margin: 30px auto 80px auto;
+    width: 60%;
+    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(255, 51, 0, 0.7);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #talking-video {
+        width: 90%;
+    }
+
+    .quote-title {
+        font-size: 2rem;
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 80px;
+    border-top: 3px solid #ffcc00;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.7);
+}
+
+footer p {
+    color: #877322;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    /* Matches your quote */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
