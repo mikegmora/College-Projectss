@@ -74,6 +74,44 @@ html {
     /* Rounded corners */
     max-width: 800px;
     /* Prevents text from stretching too wide */
+    margin: 0 auto 20px auto;
+    /* Centers the text block */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Adds a shadow behind the text box */
+}
+
+/* Default (Desktop) */
+.bio-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac\ picture.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Mobile Swap */
+@media screen and (max-width: 100px) {
+    .bio-section {
+        /* Load the vertical image instead */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac\ picture.webp');
+
+        /* Reset attachment to scroll for better mobile performance */
+        background-attachment: scroll;
+    }
+}
+
+.music-section {
+    padding: 100px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac 1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.acting-section {
+    padding: 100px;
+    color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('2pac 2.jpg');
     background-size: cover;
     background-position: center;
